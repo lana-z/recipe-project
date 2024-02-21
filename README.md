@@ -27,4 +27,6 @@
 
 ### Log
 
-- Monday: set up Django project, added CRUD, items and tests, minimal styling, 
+- Monday: set up Django project, added CRUD, items and tests, minimal styling
+- Wednesday: deleted template files, redid views, settings, url, model, etc for django rest framework API 
+    - crud operations not working, seems like has to be in routing/url potentially root path but haven't been able to resolve yet
