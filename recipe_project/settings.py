@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-5(%zbl4o1zvm^hncg(y+fo6nx@d(3he(&@xg0%_rk4%a7m&nlm
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'locahost',
-    '0.0.0.0',
+  '127.0.0.1',
+  'locahost',
+  '0.0.0.0',
 ]
 
 
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'compressor',
+    'rest_framework',
 
     'recipes',
 ]
@@ -63,7 +63,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
+
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -131,9 +131,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-COMPRESS_ROOT = BASE_DIR / 'static'
-
-COMPRESS_ENABLED = True
-
-STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
