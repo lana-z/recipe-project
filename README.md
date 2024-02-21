@@ -18,7 +18,10 @@
 ### How to initialize/run your application
 
 - `pip install -r requirements.txt`
-- run `python manage.py runserver`
+- run `docker compose up`
+- user: admin, password: admin
+- list view: http://127.0.0.1:8000/api/v1/recipes/
+- example detail: http://127.0.0.1:8000/api/v1/recipes/4/
 
 ### Tests
 
@@ -28,5 +31,6 @@
 ### Log
 
 - Monday: set up Django project, added CRUD, items and tests, minimal styling
-- Wednesday: deleted template files, redid views, settings, url, model, etc for django rest framework API 
+- Tuesday: deleted template files, redid views, settings, url, model, etc for django rest framework API 
     - crud operations not working, seems like has to be in routing/url potentially root path but haven't been able to resolve yet
+- Wednesday: finished CRUD operations/ Django REST Framework functionality, added Docker host and postgres db

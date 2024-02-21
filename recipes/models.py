@@ -7,7 +7,6 @@ class Recipe(models.Model):
     added_by = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     notes = models.TextField()
     rating = models.IntegerField(default=0)
-    link = models.URLField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
