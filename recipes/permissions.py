@@ -9,7 +9,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True
 
-        # if added_by is null in Model then this will check for that case and allow access
+        # if owner is null in Model then this will check for that case and allow access
         if obj.owner is None:
             return True
 
