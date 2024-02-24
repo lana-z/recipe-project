@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 
 class Recipe(models.Model):
     name = models.CharField(max_length=256)
-    added_by = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     notes = models.TextField()
     rating = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
