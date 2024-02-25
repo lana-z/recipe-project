@@ -36,4 +36,5 @@
     - crud operations not working, seems like has to be in routing/url potentially root path but haven't been able to resolve yet
 - Wednesday: finished CRUD operations/ Django REST Framework functionality, added Docker host and postgres db
 - Thursday: added tests, added rest framework permissions (authZ), attempt to add jwt authentication (authN)
-- Friday: JWT authenticaton and crud work
+- Friday: JWT authenticaton and crud work using docker, django dev server and postgres db
+- Saturday: switched to gunicorn production server
