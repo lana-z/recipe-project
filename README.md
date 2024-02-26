@@ -18,11 +18,13 @@
 ### How to initialize/run your application
 
 - `pip install -r requirements.txt`
-- run `docker compose up`
-- user: admin, password: admin
-- create superuser: `docker compose run web python manage.py createsuperuser`
-- list view: http://127.0.0.1:8000/api/v1/recipes/
-- example detail: http://127.0.0.1:8000/api/v1/recipes/4/
+- Run `docker compose up`
+- User: admin, password: admin
+- Create superuser: `docker compose run web python manage.py createsuperuser`
+- Get token: `api/token/`
+- Refresh token: `api/token/refresh`
+- Use the app: `api/v1/recipes`
+- View one recipe: `api/v1/recipes/2/`
 
 ### Tests
 
